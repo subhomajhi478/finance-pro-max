@@ -1,0 +1,36 @@
+‎body {
+‎    font-family: Arial;
+‎    text-align: center;
+‎    background: #f4f4f4;
+‎}
+‎
+‎.dark {
+‎    background: #1e1e1e;
+‎    color: white;
+‎}
+‎
+‎input, select {
+‎    padding: 8px;
+‎    margin: 5px;
+‎}
+‎
+‎button {
+‎    padding: 6px 12px;
+‎    margin: 5px;
+‎    cursor: pointer;
+‎}
+‎
+‎ul {
+‎    list-style: none;
+‎    padding: 0;
+‎}
+‎
+‎li {
+‎    background: white;
+‎    margin: 5px;
+‎    padding: 8px;
+‎}
+‎
+‎.dark li {
+‎    background: #333;
+‎}
