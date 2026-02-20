@@ -1,0 +1,50 @@
+‎<!DOCTYPE html>
+‎<html>
+‎<head>
+‎    <title>Finance Manager Pro Max</title>
+‎    <link rel="stylesheet" href="style.css">
+‎    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+‎</head>
+‎<body>
+‎
+‎<div id="loginBox" class="login-box">
+‎    <h2>🔐 Login</h2>
+‎    <input type="password" id="password" placeholder="Enter Password">
+‎    <button onclick="login()">Login</button>
+‎</div>
+‎
+‎<div id="app" style="display:none;">
+‎
+‎    <h1>💎 Finance Manager Pro Max</h1>
+‎
+‎    <button onclick="toggleDark()">🌙 Dark Mode</button>
+‎    <button onclick="exportPDF()">📄 Export PDF</button>
+‎    <button onclick="changePassword()">🔑 Change Password</button>
+‎
+‎    <h2>Balance: ₹ <span id="balance">0</span></h2>
+‎
+‎    <div class="form">
+‎        <input type="date" id="date">
+‎        <input type="text" id="desc" placeholder="Description">
+‎        <input type="number" id="amount" placeholder="Amount">
+‎        <select id="type">
+‎            <option value="income">Income</option>
+‎            <option value="expense">Expense</option>
+‎        </select>
+‎        <button onclick="addTransaction()">Add</button>
+‎    </div>
+‎
+‎    <h3>Filter by Month</h3>
+‎    <input type="month" id="monthFilter" onchange="updateUI()">
+‎
+‎    <ul id="list"></ul>
+‎
+‎    <h3>Charts</h3>
+‎    <canvas id="pieChart"></canvas>
+‎    <canvas id="barChart"></canvas>
+‎
+‎</div>
+‎
+‎<script src="script.js"></script>
+‎</body>
+‎</html>
